@@ -43,7 +43,7 @@ public class SeleniumCommands {
     return new WebDriverWait(Hooks.getDriver(), Duration.ofSeconds(30));
   }
 
-  private <V> V until(Function<? super WebDriver, V> expectedCondition) {
+  public <V> V until(Function<? super WebDriver, V> expectedCondition) {
     return defaultWait().until(expectedCondition);
   }
 

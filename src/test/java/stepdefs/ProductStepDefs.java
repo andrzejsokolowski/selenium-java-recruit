@@ -25,7 +25,7 @@ public class ProductStepDefs {
   public void theUserIsOnAProductPage() {
     driver.get("https://uk.gymshark.com/products/gymshark-speed-t-shirt-black-aw23");
     productId = 39654522814667L;
-    new ProductDisplayPage().closeCookieBanner();
+    new ProductDisplayPage();
   }
 
   @When("adding the product to the Bag")
